@@ -10,8 +10,9 @@ export default function AppLayout() {
 
     return (
             <Stack>
-                <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-                <Stack.Screen name="about" options={{ presentation: "modal" }} />
+                <Stack.Screen name="(tabs)" options={{ title: "Home", headerShown: false }} />
+                <Stack.Screen name="about" options={{ title: "About", presentation: "modal" }} />
+                <Stack.Screen name="projects" options={{ headerShown: false }} />
             </Stack>
     )
 }
